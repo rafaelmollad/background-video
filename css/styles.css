@@ -1,0 +1,105 @@
+/*************** 
+ * BASE STYLES *
+ ***************/
+
+/* Variables */
+:root {
+  --white: #ffffff;
+  --btn-color: #4285f4;
+  --btn-color-hover: #1d84d5;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  overflow: hidden;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/********
+ * LOGO *
+ ********/
+
+/* Link containing the logo img */
+.logo {
+  position: relative;
+  left: 2.5rem;
+  top: 2.5rem;
+  display: none;
+  z-index: 1;
+  transition: opacity 0.5s ease;
+}
+
+.logo:hover {
+  opacity: 0.75;
+}
+
+/* Google Arts and Culture */
+.logo img {
+  width: 21rem;
+}
+
+/********************
+ * BACKGROUND VIDEO *
+ ********************/
+
+.bg-video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+/***********
+ * CONTENT *
+ ***********/
+
+/* Container for the heading, the paragraph and the button */
+.content {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.content img {
+  width: 100%;
+}
+
+.content p {
+  color: var(--white);
+  font-size: 1.6rem;
+  font-weight: 300;
+  margin: 6rem 0;
+  max-width: 80%;
+  text-align: center;
+  letter-spacing: 0.045rem;
+  word-spacing: 0.045rem;
+}
+
+.btn {
+  padding: 1.5rem 1.5rem;
+  background: var(--btn-color);
+  border-radius: 3px;
+  color: var(--white);
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn:hover {
+  background: var(--btn-color-hover);
+}
