@@ -37,4 +37,9 @@
   .content p {
     margin: 5rem;
   }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+  }
 }
